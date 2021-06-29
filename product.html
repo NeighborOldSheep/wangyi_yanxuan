@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品页面</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/product.css">
+</head>
+
+<body>
+
+    <!-- 创建头部容器 -->
+    <div class="header-wrapper">
+        <!-- 创建头部 -->
+        <div class="header">
+            <div class="center">
+                <ul class=" right">
+                    <li><a href="#">登录/注册</a></li>
+                    <!-- 设置分割线 -->
+                    <li class="line">|</li>
+                    <li><a href="#">我的订单</a></li>
+                    <li class="line">|</li>
+                    <li><a href="#">会员</a></li>
+                    <li class="line">|</li>
+                    <li><a href="#">甄选家</a></li>
+                    <li class="line">|</li>
+                    <li class="drop-layer">
+                        <a href="#">
+                            企业采购
+                            <i class="fas fa-angle-down"></i>
+                        </a>
+                        <!-- 下拉菜单 -->
+                        <div class="purchase">
+                            <ul>
+                                <li><a href="">企业购</a></li>
+                                <li><a href="#">礼品卡</a></li>
+                                <li class="noborder"><a href="#">联系我们</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="line">|</li>
+                    <li class="drop-layer">
+                        <a href="#">
+                            客户服务
+                            <i class="fas fa-angle-down"></i>
+                        </a>
+                        <!-- 下拉菜单 -->
+                        <div class="service">
+                            <ul>
+                                <li><a href="#">在线客服</a></li>
+                                <li><a href="#">帮助中心</a></li>
+                                <li><a href="#">商务合作</a></li>
+                                <li class="noborder"><a href="#">开放平台</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="line">|</li>
+                    <li class="drop-layer">
+                        <a href="#">
+                            <i class="fas fa-mobile-alt"></i>
+                            APP
+                        </a>
+                        <!-- 下拉菜单 -->
+                        <div class="barcode">
+                            <img src="/img/down.png">
+                            <span>下载领大额红包</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- logo搜索栏购物车设置 -->
+        <div class="feature-Tab center clearfix">
+            <!-- logo -->
+            <div class="logo"></div>
+            <!-- 搜索框 -->
+            <div class="search">
+                <input type="text" placeholder="Timberland制造商情侣牛皮鞋">
+                <button type="submit">搜索</button>
+            </div>
+            <!-- 购物车 -->
+            <div class="shopping-car-button">
+                <i class="shopping-car"></i>
+                <span>购物车</span>
+                <!-- <i class="redDot">0</i> -->
+            </div>
+        </div>
+
+        <!-- 导航  id="navFix"开启吸顶导航-->
+        <nav class="nav">
+            <div class="center clearfix">
+                <!-- 导航栏图标 -->
+                <a href="#" class="sub-logo"><img src="img/smallLogo.gif"></a>
+                <!-- 主菜单 -->
+                <ul class="navBar">
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#">居家</a></li>
+                    <li><a href="#">餐厨</a></li>
+                    <li><a href="#">配件</a></li>
+                    <li><a href="#">服装</a></li>
+                    <li><a href="#">洗护</a></li>
+                    <li><a href="#">婴童</a></li>
+                    <li><a href="#">杂货</a></li>
+                    <li><a href="#">饮食</a></li>
+                    <li><a href="#">其他</a></li>
+                    <li class="separate">|</li>
+                    <li><a href="#">为你严选</a></li>
+                    <li><a href="#">众筹</a></li>
+                </ul>
+                <!-- 搜索图标 -->
+                <div class="search-ico"></div>
+                <!-- 小人图标 -->
+                <div class="my-account"></div>
+                <!-- 购物车 -->
+                <div class="car-wrapper">
+                    <i>0</i>
+                    <div class="car">
+                        <div class="list">
+                            <ul>
+                                <li>
+                                    <!-- 物品图片 -->
+                                    <a href="#" class="img"><img src="img/img_01-1.png"></a>
+                                    <!-- 物品信息 -->
+                                    <div class="message">
+                                        <p><a href="#">领尖扣商务免烫衬衫</a></p>
+                                        <p>白色 L x1</p>
+                                    </div>
+                                    <div class="price">￥219.00</div>
+                                    <div class="close">X</div>
+                                </li>
+                                <li>
+                                    <!-- 物品图片 -->
+                                    <a href="#" class="img"><img src="img/img_01-1.png"></a>
+                                    <!-- 物品信息 -->
+                                    <div class="message">
+                                        <p><a href="#">领尖扣商务免烫衬衫</a></p>
+                                        <p>白色 L x1</p>
+                                    </div>
+                                    <div class="price">￥219.00</div>
+                                    <div class="close">X</div>
+                                </li>
+                                <li>
+                                    <!-- 物品图片 -->
+                                    <a href="#" class="img"><img src="img/img_01-1.png"></a>
+                                    <!-- 物品信息 -->
+                                    <div class="message">
+                                        <p><a href="#">领尖扣商务免烫衬衫</a></p>
+                                        <p>白色 L x1</p>
+                                    </div>
+                                    <div class="price">￥219.00</div>
+                                    <div class="close">X</div>
+                                </li>
+
+                            </ul>
+                            <!-- 右侧滚动条 -->
+                            <div class="scrollBar">
+                                <span class="topBtn"></span>
+                                <div class="slide-wrapper">
+                                    <div class="slider"></div>
+                                </div>
+                                <span class="bottomBtn"></span>
+                            </div>
+                        </div>
+                        <!-- 结算部分 -->
+                        <div class="total">
+                            商品合计:<span>￥751.00</span>
+                            <a href="#">去购物车结算</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 登录/注册 -->
+                <div class="login">
+                    <a href="#">登录</a>
+                    <a href="#">注册</a>
+                </div>
+            </div>
+            <!-- 副级菜单 -->
+            <div class="subNav clearfix">
+                <ul>
+                    <li><a href="#"><img src="img/nav_01.png">1被枕</a></li>
+                    <li><a href="#"><img src="img/nav_02.png">床品件套</a></li>
+                    <li><a href="#"><img src="img/nav_03.png">床垫</a></li>
+                    <li><a href="#"><img src="img/nav_04.png">地毯</a></li>
+                    <li><a href="#"><img src="img/nav_05.png">家具</a></li>
+                    <li><a href="#"><img src="img/nav_06.png">舒坐</a></li>
+                    <li><a href="#"><img src="img/nav_07.png">灯具</a></li>
+                    <li><a href="#"><img src="img/nav_08.png">家饰</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><img src="img/nav_01.png">2被枕</a></li>
+                    <li><a href="#"><img src="img/nav_02.png">床品件套</a></li>
+                    <li><a href="#"><img src="img/nav_03.png">床垫</a></li>
+                    <li><a href="#"><img src="img/nav_04.png">地毯</a></li>
+                    <li><a href="#"><img src="img/nav_05.png">家具</a></li>
+                    <li><a href="#"><img src="img/nav_06.png">舒坐</a></li>
+                    <li><a href="#"><img src="img/nav_07.png">灯具</a></li>
+                    <li><a href="#"><img src="img/nav_08.png">家饰</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><img src="img/nav_01.png">3被枕</a></li>
+                    <li><a href="#"><img src="img/nav_02.png">床品件套</a></li>
+                    <li><a href="#"><img src="img/nav_03.png">床垫</a></li>
+                    <li><a href="#"><img src="img/nav_04.png">地毯</a></li>
+                    <li><a href="#"><img src="img/nav_05.png">家具</a></li>
+                    <li><a href="#"><img src="img/nav_06.png">舒坐</a></li>
+                    <li><a href="#"><img src="img/nav_07.png">灯具</a></li>
+                    <li><a href="#"><img src="img/nav_08.png">家饰</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><img src="img/nav_01.png">4被枕</a></li>
+                    <li><a href="#"><img src="img/nav_02.png">床品件套</a></li>
+                    <li><a href="#"><img src="img/nav_03.png">床垫</a></li>
+                    <li><a href="#"><img src="img/nav_04.png">地毯</a></li>
+                    <li><a href="#"><img src="img/nav_05.png">家具</a></li>
+                    <li><a href="#"><img src="img/nav_06.png">舒坐</a></li>
+                    <li><a href="#"><img src="img/nav_07.png">灯具</a></li>
+                    <li><a href="#"><img src="img/nav_08.png">家饰</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><img src="img/nav_01.png">5被枕</a></li>
+                    <li><a href="#"><img src="img/nav_02.png">床品件套</a></li>
+                    <li><a href="#"><img src="img/nav_03.png">床垫</a></li>
+                    <li><a href="#"><img src="img/nav_04.png">地毯</a></li>
+                    <li><a href="#"><img src="img/nav_05.png">家具</a></li>
+                    <li><a href="#"><img src="img/nav_06.png">舒坐</a></li>
+                    <li><a href="#"><img src="img/nav_07.png">灯具</a></li>
+                    <li><a href="#"><img src="img/nav_08.png">家饰</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><img src="img/nav_01.png">6被枕</a></li>
+                    <li><a href="#"><img src="img/nav_02.png">床品件套</a></li>
+                    <li><a href="#"><img src="img/nav_03.png">床垫</a></li>
+                    <li><a href="#"><img src="img/nav_04.png">地毯</a></li>
+                    <li><a href="#"><img src="img/nav_05.png">家具</a></li>
+                    <li><a href="#"><img src="img/nav_06.png">舒坐</a></li>
+                    <li><a href="#"><img src="img/nav_07.png">灯具</a></li>
+                    <li><a href="#"><img src="img/nav_08.png">家饰</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><img src="img/nav_01.png">7被枕</a></li>
+                    <li><a href="#"><img src="img/nav_02.png">床品件套</a></li>
+                    <li><a href="#"><img src="img/nav_03.png">床垫</a></li>
+                    <li><a href="#"><img src="img/nav_04.png">地毯</a></li>
+                    <li><a href="#"><img src="img/nav_05.png">家具</a></li>
+                    <li><a href="#"><img src="img/nav_06.png">舒坐</a></li>
+                    <li><a href="#"><img src="img/nav_07.png">灯具</a></li>
+                    <li><a href="#"><img src="img/nav_08.png">家饰</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><img src="img/nav_01.png">8被枕</a></li>
+                    <li><a href="#"><img src="img/nav_02.png">床品件套</a></li>
+                    <li><a href="#"><img src="img/nav_03.png">床垫</a></li>
+                    <li><a href="#"><img src="img/nav_04.png">地毯</a></li>
+                    <li><a href="#"><img src="img/nav_05.png">家具</a></li>
+                    <li><a href="#"><img src="img/nav_06.png">舒坐</a></li>
+                    <li><a href="#"><img src="img/nav_07.png">灯具</a></li>
+                    <li><a href="#"><img src="img/nav_08.png">家饰</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><img src="img/nav_01.png">9被枕</a></li>
+                    <li><a href="#"><img src="img/nav_02.png">床品件套</a></li>
+                    <li><a href="#"><img src="img/nav_03.png">床垫</a></li>
+                    <li><a href="#"><img src="img/nav_04.png">地毯</a></li>
+                    <li><a href="#"><img src="img/nav_05.png">家具</a></li>
+                    <li><a href="#"><img src="img/nav_06.png">舒坐</a></li>
+                    <li><a href="#"><img src="img/nav_07.png">灯具</a></li>
+                    <li><a href="#"><img src="img/nav_08.png">家饰</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    
+    <!-- 面包屑 -->
+    <div id="position">
+        <a href="#">首页</a> >
+        <a href="#">其他</a> >
+        <a href="#">数码</a> >
+        <span>网易智造空气质感手机壳</span>
+    </div>
+
+    <!-- 产品介绍 -->
+    <div id="productImg" class="clearfix">
+        <!-- 图片 -->
+        <div class="left">
+            <!-- 左侧大图 -->
+            <img src="img/img_35.jpg" class="left">
+            <!-- 右侧小图 -->
+            <div class="smallImg right">
+                <img src="img/img_35.jpg" class="active">
+                <img src="img/img_36.jpg">
+                <img src="img/img_37.jpg">
+                <img src="img/img_38.jpg">
+                <img src="img/img_39.jpg">
+            </div>
+        </div>
+        <!-- 信息 -->
+        <div class="info right">
+            <h2>网易智造空气感苹果手机壳</h2>
+            <p>0.4mm纸一样薄 磨砂手感</p>
+            <div class="price">
+                <div>
+                    <span>售价</span>
+                    <strong>￥38.00</strong>
+                </div>
+                <div>
+                    <span>促销</span>
+                    <a href="javascript:;" class="tag">愚人节</a>
+                    <a href="javascript:;" class="discount">领全场减卷，额外机会包裹翻倍</a>
+                </div>
+                <div>
+                    <span>服务</span>
+                    <ul>
+                        <li><i></i><a href="#">30天无忧退货</a></li>
+                        <li><i></i><a href="#">48小时快速退款</a></li>
+                        <li><i></i><a href="#">满88元免邮费</a></li>
+                        <li><i></i><a href="#">网易自营品牌</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="type">
+                <dl class="clearfix">
+                    <dt>型号</dt>
+                    <dd>iphone 7</dd>
+                    <dd>iphone 7 Plus</dd>
+                </dl>
+                <dl class="clearfix">
+                    <dt>颜色</dt>
+                    <dd>清透黑</dd>
+                    <dd>纯净白</dd>
+                </dl>
+            </div>
+            <div class="number clearfix">
+                <span class="nTitle">数量</span>
+                <div class="noClick">
+                    <span>-</span>
+                    <input type="text" value="1">
+                    <span>+</span>
+                </div>
+            </div>
+            <div class="btn">
+                <a href="javascript:;" class="buy">立即购买</a>
+                <a href="javascript:;" class="join">加入购物车</a>
+                <a href="javascript:;" class="collection">收藏</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 大家都在看 -->
+    <div id="look">
+        <div class="center">
+            <h3>大家都在看</h3>
+            <div class="content" id="allLokk">
+                <div class="carouselImg">
+                    <ul class="clearfix">
+                        <li>
+                            <a href="javascript:;"><img src="img/img_40.png"></a>
+                            <a href="javascript:;">网易智造安卓快充数据线</a>
+                            <span>￥18</span>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="img/img_41.png"></a>
+                            <a href="javascript:;">网易智造安卓快充数据线</a>
+                            <span>￥18</span>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="img/img_42.png"></a>
+                            <a href="javascript:;">网易智造安卓快充数据线</a>
+                            <span>￥18</span>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="img/img_43.png"></a>
+                            <a href="javascript:;">网易智造安卓快充数据线</a>
+                            <span>￥18</span>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="img/img_44.png"></a>
+                            <a href="javascript:;">网易智造安卓快充数据线</a>
+                            <span>￥18</span>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="img/img_45.png"></a>
+                            <a href="javascript:;">网易智造安卓快充数据线</a>
+                            <span>￥18</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="prev"><</div>
+                        <div class="next">></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 详情评价选项卡 -->
+        <div id="bottom">
+            <div class="center clearfix">
+                <!-- 评价详情 -->
+                <div class="left comment">
+                    <div class="title">
+                        <a href="#" class="active">详情</a>
+                        <a href="#">评价<span>(67)</span></a>
+                    </div>
+                    <!-- 详情 -->
+                    <div class="detail" style="display:none;">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>型号</td>
+                                    <td>iphone7/7 Pkus</td>
+                                    <td>厚度</td>
+                                    <td>0.4mm</td>
+                                </tr>
+                                <tr>
+                                    <td>重量</td>
+                                    <td>3g/6g</td>
+                                    <td>颜色</td>
+                                    <td>清透黑/纯净白</td>
+                                </tr>
+                                <tr>
+                                    <td>工艺</td>
+                                    <td>微磨砂+金包边</td>
+                                    <td>材质</td>
+                                    <td>PP塑料</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="img">
+                            <img src="img/img_48.jpg">
+                            <img src="img/img_49.jpg">
+                            <img src="img/img_50.jpg">
+                            <img src="img/img_51.jpg">
+                        </div>
+                        <div class="problem">
+                            <h3>常见问题</h3>
+                            <dl>
+                                <dt>网易严选的订单如何配送？</dt>
+                                <dd>网易严选会根据商品所在地、顾客所在地和商品的尺寸重量优选物流配送商，确保优质用户体验。目前暂不支持自选快递，具体物流信息可在下单成功后“我的订单-追踪物流”中查看。
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>如何申请退换货？</dt>
+                                <dd>1.支持无忧退换货的商品，自收到商品之日起在无忧退换货期限内，顾客可申请无忧退换货；食品、定作类商品、贴身衣物、积分兑换等特殊商品，无质量问题不支持退换货；</dd>
+                                <dd>2.如果是退货，退款将原路返还，不同的银行处理时间不同，预计1-5个工作日到账；</dd>
+                                <dd>3.退货流程：确认收 货-申请退货-客服审核通过-用户寄回商品-仓库签收验货-退款审核-退款完成</dd>
+                                <dd>4.换货流程：确认收货-申请换货-客服审核通过-用户寄回商品-仓库签收验货-客服确认-换货完成；</dd>
+                                <dd>5.质量问题和平台问题退换货运费由网易严选承担，个人原因退货运费由用户自行承担。上门取件费用由网易严选统一与快递服务商结算，顾客只需将退换货商品交给上门取件快递员寄回。如顾客选择自行寄回商品，请先垫付运费，到货验证商品后，严选将以现金券形式为用户报销运费，不接受单方面到付件。
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <!-- 评价选项卡 -->
+                    <div class="evaluate">
+                        <div class="eTitle">
+                            <div class="active">
+                                <i></i>
+                                <span>全部 (200)</span>
+                            </div>
+                            <div>
+                                <i></i>
+                                <span>有图 (6)</span>
+                            </div>
+                        </div>
+                        <ul class="content">
+                            <li>
+                                <div class="avatar">
+                                    <img src="img/avatar.png">
+                                    <a href="#" class="vip1"></a>
+                                    <span>s******i</span>
+                                </div>
+                                <div class="text clearfix">
+                                    <p>我买错了！！！！iPhone6是！我快哭了！！！</p>
+                                    <div class="smallImg">
+                                        <span><img src="img/img_50.jpg"></span>
+                                        <span><img src="img/img_51.jpg"></span>
+                                    </div>
+                                    <div class="color clearfix">
+                                        <span class="left">型号:iphone 7, 颜色:纯净白</span>
+                                        <span class="right">2017-03-25 09:05 </span>
+                                    </div>
+                                    <div class="dialogue" id="commentImg1">
+                                        <div class="carouselImgCon">
+                                            <ul>
+                                                <li>
+                                                    <img src="img/img_50.jpg">
+                                                </li>
+                                                <li>
+                                                    <img src="img/img_51.jpg">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="close">X</div>
+                                        <div class="prev">
+                                            << /div>
+                                                <div class="next">></div>
+                                        </div>
+                                    </div>
+                            </li>
+                            <li>
+                                <div class="avatar">
+                                    <img src="img/avatar.png">
+                                    <a href="#" class="vip1"></a>
+                                    <span>s******i</span>
+                                </div>
+                                <div class="text clearfix">
+                                    <p>我买错了！！！！iPhone6是！我快哭了！！！</p>
+                                    <div class="smallImg">
+                                        <span><img src="img/img_50.jpg"></span>
+                                        <span><img src="img/img_51.jpg"></span>
+                                    </div>
+                                    <div class="color clearfix">
+                                        <span class="left">型号:iphone 7, 颜色:纯净白</span>
+                                        <span class="right">2017-03-25 09:05 </span>
+                                    </div>
+                                    <div class="dialogue" id="commentImg1">
+                                        <div class="carouselImgCon">
+                                            <ul>
+                                                <li>
+                                                    <img src="img/img_50.jpg">
+                                                </li>
+                                                <li>
+                                                    <img src="img/img_51.jpg">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="close">X</div>
+                                        <div class="prev">
+                                            << /div>
+                                                <div class="next">></div>
+                                        </div>
+                                    </div>
+                            </li>
+                            <li>
+                                <div class="avatar">
+                                    <img src="img/avatar.png">
+                                    <a href="#" class="vip1"></a>
+                                    <span>s******i</span>
+                                </div>
+                                <div class="text clearfix">
+                                    <p>我买错了！！！！iPhone6是！我快哭了！！！</p>
+                                    <div class="smallImg">
+                                        <span><img src="img/img_50.jpg"></span>
+                                        <span><img src="img/img_51.jpg"></span>
+                                    </div>
+                                    <div class="color clearfix">
+                                        <span class="left">型号:iphone 7, 颜色:纯净白</span>
+                                        <span class="right">2017-03-25 09:05 </span>
+                                    </div>
+                                    <div class="dialogue" id="commentImg1">
+                                        <div class="carouselImgCon">
+                                            <ul>
+                                                <li>
+                                                    <img src="img/img_50.jpg">
+                                                </li>
+                                                <li>
+                                                    <img src="img/img_51.jpg">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="close">X</div>
+                                        <div class="prev">
+                                            << /div>
+                                                <div class="next">></div>
+                                        </div>
+                                    </div>
+                            </li>
+                            <li>
+                                <div class="avatar">
+                                    <img src="img/avatar.png">
+                                    <a href="#" class="vip1"></a>
+                                    <span>s******i</span>
+                                </div>
+                                <div class="text clearfix">
+                                    <p>我买错了！！！！iPhone6是！我快哭了！！！</p>
+                                    <div class="smallImg">
+                                        <span><img src="img/img_50.jpg"></span>
+                                        <span><img src="img/img_51.jpg"></span>
+                                    </div>
+                                    <div class="color clearfix">
+                                        <span class="left">型号:iphone 7, 颜色:纯净白</span>
+                                        <span class="right">2017-03-25 09:05 </span>
+                                    </div>
+                                    <div class="dialogue" id="commentImg1">
+                                        <div class="carouselImgCon">
+                                            <ul>
+                                                <li>
+                                                    <img src="img/img_50.jpg">
+                                                </li>
+                                                <li>
+                                                    <img src="img/img_51.jpg">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="close">X</div>
+                                        <div class="prev">
+                                            << /div>
+                                                <div class="next">></div>
+                                        </div>
+                                    </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 页码 -->
+                    <div class="page">
+                        <span>首页</span>
+                        <span>
+                            <上一页< /span>
+                                <div class="mainpage">
+                                    <span>1</span>
+                                    <span>2</span>
+                                    <span>3</span>
+                                    <span>4</span>
+                                    <span>5</span>
+                                    <span>6</span>
+                                    <span>7</span>
+                                    <span>8</span>
+                                    <span>8</span>
+                                    <span>10</span>
+                                </div>
+                                <span>尾页</span>
+                                <span>>下一页</span>
+                    </div>
+                </div>
+                <!-- 专栏 -->
+                <div class="right special">
+                    <h3>专栏推荐</h3>
+                    <div>
+                        <a href="#">
+                            <img src="img/img_52.jpg">
+                        </a>
+                        <a href="#">好东西不该只用凑单</a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="img/img_53.jpg">
+                        </a>
+                        <a href="#">好东西不该只用凑单</a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="img/img_54.jpg">
+                        </a>
+                        <a href="#">好东西不该只用凑单</a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="img/img_55.jpg">
+                        </a>
+                        <a href="#">好东西不该只用凑单</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部 -->
+        <div id="footer">
+            <div class="message">
+                <div class="center">
+                    <div class="box">
+                        <h4>客服电话</h4>
+                        <p class="phone">400-0368-163</p>
+                        <p class="workTime">9:00-22:00</p>
+                        <div class="btn">
+                            <a href="#">用户反馈</a>
+                            <a href="#">在线客服</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h4>何为严选</h4>
+                        <p> 网易原创生活类电商品牌，秉承网易一贯的严谨态度，我们深入世界各地，
+                            从源头全程严格把控商品生产环节，力求消费者甄选到最优质的的商品
+                        </p>
+                        <ul class="clearfix">
+                            <li>关注我们:</li>
+                            <li><a href="#"><img src="img/ico_05.gif"></a></li>
+                            <li><a href="#"><img src="img/ico_06.gif"></a></li>
+                            <li><a href="#"><img src="img/ico_07.gif"></a></li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h4>扫码下载严选APP</h4>
+                        <img src="img/down.png">
+                        <p>首单立减8元</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="foot">
+                <div class="title">
+                    <div>30天无忧退货</div>
+                    <div>满88元免邮费</div>
+                    <div>网易品质保证</div>
+                </div>
+                <div class="copy">
+                    <ul class="clearfix">
+                        <li><a href="javascript:;">关于我们</a>|</li>
+                        <li><a href="javascript:;">帮助中心</a>|</li>
+                        <li><a href="javascript:;">售后服务</a>|</li>
+                        <li><a href="javascript:;">配送与验收</a>|</li>
+                        <li><a href="javascript:;">商务合作</a>|</li>
+                        <li><a href="javascript:;">企业采购</a>|</li>
+                        <li><a href="javascript:;">友情链接</a></li>
+                    </ul>
+                    <p>网易公司版权所有 &copy; 1997-2017 食品经营许可证: JY13301080111719</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 右侧固定功能栏 -->
+        <div class="sideBar">
+            <ul>
+                <li><a href="javascript:;">新人有礼</a></li>
+                <li><a href="javascript:;">下载APP</a></li>
+                <li><a href="javascript:;">在线客服</a></li>
+                <li><a href="javascript:;" class="back">回顶部</a></li>
+            </ul>
+        </div>
+
+        <script src="js/common.js"></script>
+        <script src="js/product_listData.js"></script>
+        <script src="js/product.js"></script>
+
+</body>
+
+</html>

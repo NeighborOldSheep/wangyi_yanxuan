@@ -1,0 +1,631 @@
+/* ----------Banner---------- */
+
+.banner{
+    /* width: 1260px; */
+    height: 420px;
+    position: relative;   
+    overflow: hidden;
+    /* margin: 0 auto; */
+}
+
+/* .bannerPic img{
+    opacity: 0;
+}
+ */
+
+ .banner .bannerPic a{
+    position: absolute;
+    left: 50%;
+    margin-left: -960px;
+ }
+
+/* banne两侧按钮设置 */
+.prev,
+.next{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background: #d0c4af;
+    color: #fff;
+    font-size: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.prev:hover,
+.next:hover{
+    background-color: #b19e7a;
+}
+
+.banner .prev{
+    left: 10px;
+}
+
+.banner .next{
+    right: 10px;
+}
+
+/* 导航点设置 */
+.banner .navDot{
+    height: 30px;
+    position: absolute;
+    bottom: 20px;;
+    left: 50%;
+}
+
+.banner .navDot a{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 0 10px;
+    border: 1px solid #d6d5d5;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.banner .navDot a:hover,
+.banner .navDot .active{
+    background-color: #a7936e;
+    border: 3px solid #dfcead;
+    width: 4px;
+    height: 4px;
+    transform: scale(2);
+}
+
+
+/* ----------Brand---------- */
+#brand{
+    width: 1090px;
+    margin: 30px auto;
+}
+
+/* 品牌标题设置 */
+#brand .brand-name{
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.brand-name h3,
+#recommend header h3{
+    font-size: 28px;
+    display: inline-block;
+    margin-right: 20px;
+} 
+
+.brand-name .right{
+    padding-top: 10px;
+}
+
+.brand-name .right span:hover{
+    color: #a7936e;
+}
+
+/* 品牌图片设置 */
+#brand .bImg{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 图片文字 */
+.bImg .imgBox{
+    width: 357px;
+    height: 320px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+
+.bImg .imgBox img{
+    width: 357px;
+    height: 320px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.bImg .imgBox h4{
+    font-size: 24px;
+    color: #666;
+    position: relative;
+    z-index: 2;
+    margin-top: 50px;
+}
+
+.bImg .imgBox span{
+    display: inline-block;
+    border-top: 3px solid #666;
+    padding-top: 10px;
+    margin-top: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+#brand .imgBox div{
+    width: 356px;
+    height: 155px;
+    text-align: left;
+    position: relative;
+    padding-left: 20px;
+}
+
+#brand .imgBox div img{
+    width: 357px;
+    height: 155px;
+}
+
+#brand .imgBox:nth-last-child(1){
+    display: flex;
+    flex-wrap: wrap;
+    align-content:space-between;
+}
+
+/* ----------新品发售----------- */
+#new{
+    width: 1090px;
+    margin: 50px auto;
+}
+
+#new .content{
+    height: 327px;
+    position: relative;
+    margin-top: 10px;
+}
+
+#new .carouselImgCon{
+    position: relative;
+    height: 327px;
+    overflow: hidden;
+}
+
+#new .carouselImgCon ul{
+    width: 2200px;
+    position: absolute;
+    left: 0;
+}
+
+#new .carouselImgCon ul li{
+    float: left;
+    width: 265px;
+    margin-right: 10px;
+    position: relative;
+}
+
+#new .carouselImgCon ul li img{
+    width: 265px;
+    height: 265px;
+}
+
+/* 设置2色可选样式 */
+#new .colorNum,
+#recommend .colorNumb{
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    border: 1px solid rgb(179,160,125);
+    background-color: rgba(244,240,234);
+    border-radius: 5px;
+    color: rgb(167,147,110);
+    font-size: 12px;
+    line-height: 20px;
+}
+
+/* 物品信息设置 */
+#new .title{
+    text-align: center;
+}
+
+#new .title a,
+#recommend .title a{
+    font-weight: bold;
+}
+
+#new .title p,
+#recommend .title p{
+    color: #d4282d;
+    margin-top: 5px;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+/* 隐藏hover过后的第二层图片 */
+#new .carouselImgCon ul li img:nth-of-type(2){
+    display: none;
+}
+
+
+#new .carouselImgCon ul li:hover{
+    background-color: #f4f0ea;
+    box-shadow: 3px 2px 3px rgba(0,0,0,.2);
+}
+
+/* 鼠标移入图片切换 */
+#new ul li:hover img:nth-of-type(2){
+    display: block;
+}
+
+#new ul li:hover img:nth-of-type(1),
+#new ul li:hover .colorNum{
+    display: none;
+}
+
+
+/* 两侧箭头设置 */
+#new .prev{
+    position: absolute;
+    left: -70px;
+    /* background-color: #e7e2d7; */
+}
+
+#new .next{
+    position: absolute;
+    right: -70px;
+}
+
+
+/* --------人气推荐-------- */
+#recommend{
+    background-color: #f4f0ea;
+    padding: 50px 0;
+    width: 100%;
+}
+
+/* 人气推荐header内容设置 */
+#recommend header h3,
+#recommend header ul,
+#recommend header ul li{
+    float: left;
+}
+
+#recommend header ul li{
+    float: left;
+    line-height: 28px;
+    margin-right: 50px;
+    padding-top: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#recommend header li:hover,
+#recommend .active{
+    border-bottom: 2px solid #b4a078;
+}
+
+#recommend .right{
+    padding-top: 5px;
+}
+
+/* 人气推荐内容区 */
+#recommend .content{
+    display: flex;
+    text-align: center;
+}
+
+#recommend .content:nth-child(2),
+#recommend .content:nth-child(3){
+    display: none;
+}
+
+#recommend .content .box{
+    background-color: #fff;
+    margin-left: 10px;
+    width: 223px;
+    height: 210px;
+    position: relative;
+}
+
+#recommend .content .speical{
+    margin-left: 0;
+    width: 390px;
+    height: 430px;
+}
+
+#recommend .content .right-side{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#recommend .colorNumb{
+    top: 10px;
+    left: 10px;
+}
+
+/* ----------限时购---------- */
+#limit{
+    width: 1090px;
+    margin: 40px auto;
+}
+
+#limit header{
+    margin-bottom: 20px;
+}
+
+#limit header h3{
+    font-size: 28px;
+}
+
+#limit header .right{
+    padding-top: 5px;
+}
+
+/* 左侧计时器 */
+#limit .time{
+    width: 224px;
+    height: 377px;
+    text-align: center;
+    background: url("../img/time_bg.jpg");
+}
+
+#limit .time h4{
+    font-size: 28px;
+    margin-top: 50px;
+    color: #615548;
+}
+
+#limit .time p{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+#limit .time span{
+    display: inline-block;
+    background-color: #615548;;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 2px;
+    border-radius: 5px;
+}
+
+#limit .time a{
+    display: block;
+    background-color: #a7936e;
+    width: 110px;
+    height: 30px;
+    line-height: 30px;
+    margin: 50px auto 0 auto;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* 右侧内容区 */
+#limit .info{
+    width: 866px;
+}
+
+#limit .limitBox{
+    float: left;
+    border: 1px solid #f0ecf0;
+    border-left: none;
+    width: 432px;
+    height: 177px;
+    padding-top: 10px;
+}
+
+/* 图片区域 */
+#limit .limitBox .imgBox{
+    float: left;
+}
+
+/* 文字区域 */
+#limit .limitBox .right{
+    width: 252px;
+}
+
+#limit .detail p{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+#limit .numBar{
+    margin-top: 3px;
+}
+
+#limit .numBar .numCon{
+    width: 154px;
+    height: 12px;
+    border: 1px solid #f2cecd;
+    border-radius: 5px;
+    float: left;
+    margin-right: 5px;
+    margin-top: 2px;
+}
+
+#limit .numBar .numCon span{
+    display: block;
+    width: 65%;
+    height: 100%;
+    background-color: #ffe5e5;
+}
+
+#limit .numBar .numTips{
+    color: #999;
+}
+
+#limit .limitBox .payment .xianshi{
+    color: #be4141;
+}
+
+#limit .limitBox .payment .symbol{
+    color: #be4141;
+    font-size: 18px;
+}
+
+#limit .limitBox .payment strong{
+    font-size: 28px;
+    color: #be4141;
+    margin-right: 5px;
+}
+
+#limit .limitBox .payment .yuan{
+    color: #999;
+    text-decoration: line-through;
+}
+
+#limit .limitBox .qiang{
+    display: block;
+    width: 118px;
+    line-height: 31px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #be4141;
+    color: #fff;
+    margin-left: 30px;
+}
+
+/* --------居家--------- */
+.furniture{
+    width: 1090px;
+    margin: 40px auto;
+}
+
+/* 右侧标题 */
+.furniture header{
+    margin-bottom: 20px;
+}
+
+.furniture header h3{
+    font-size: 28px;
+    display: inline;
+}
+
+.furniture header .left span{
+    border-left: 2px solid #666;
+    padding: 5px 0 0 5px;
+}
+
+/* 左侧标题 */
+.furniture header .right .more{
+    float: right;
+}
+
+.furniture header .right ul{
+    float: right;
+    margin-right: 20px;
+}
+
+.furniture header .right ul li{
+    float: left;
+}
+
+.furniture header .right ul li a{
+    margin: 0 3px;
+}
+
+/* 底部样品列表 */
+.furniture .furniture-list{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.furniture .furniture-list li a{
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+}
+
+.furniture .furniture-list li img{
+    width: 250px;
+    height: 250px;
+}
+
+.furniture .furniture-list li span{
+    color: #d4282d;
+}
+
+/* ---------大家都在说---------- */
+#say{
+    background-color: #f4f0ea;
+    padding: 40px 0;
+}
+
+#say header{
+    margin-bottom: 20px;
+}
+
+#say header h3{
+    font-size: 28px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#say .content{
+    position: relative;
+}
+
+#say .content .carouselImgCon{
+    overflow: hidden;
+    position: relative;
+    height: 535px;
+}
+
+#say .content .carouselImgCon ul{
+    position: absolute;
+    left: 0;
+    width: 2000px;
+}
+
+#say .content .carouselImgCon ul li{
+    float: left;
+    width: 353px;
+    margin-left: 10px;
+    background-color: #fff;
+    padding: 1px;
+}
+
+#say .content .carouselImgCon ul li a{
+    display: block;
+    width: 353px;
+    overflow: hidden;
+}
+
+#say .content .carouselImgCon ul li img{
+    width: 353px;
+    height: 353px;
+}
+
+#say ul li div{
+    width: 353px;
+    height: 180px;
+    background-color: #fff;
+    position: relative;
+    top: -40px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#say ul li div p:nth-child(1){
+    color: #999;
+    margin-bottom: 5px;
+}
+
+#say ul li div .clearfix{
+    margin-bottom: 10px;
+}
+
+#say ul li div .left{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#say ul li div .right{
+    font-size: 12px;
+    color: #b4a078;
+}
+
+#say .content .prev{
+    left: -70px;
+}
+
+#say .content .next{
+    right: -70px;
+}

@@ -1,0 +1,901 @@
+/* 共同的样式 */
+
+/* 样式重置 */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    font-size: 14px;
+    color: #333;
+    font-family: "微软雅黑";
+}
+
+img{
+    /* 考虑IE浏览器可能会附带边框 */
+    border: none;
+    vertical-align: top;
+}
+
+a{
+    color: #333;
+}
+
+a:hover{
+    color: #b4a078;
+}
+
+input{
+    vertical-align: middle;
+    border: 1px solid #ccc;
+}
+
+label{
+    vertical-align: middle;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+
+/* 常用样式 */
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.clearfix::after,
+.clearfix::before{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+a{
+    color: #333;
+}
+
+a:hover{
+    color: #b4a078;
+}
+
+/* 居中 */
+.center{
+    width: 1090px;
+    margin: 0 auto;
+}
+
+/* 图片缩放 */
+.scaleImg img{
+    transition: 1s ease-out;
+}
+
+.scaleImg:hover img{
+    transform: scale(1.1);
+}
+
+.original{
+    background: #f4f4f4 url("../img/original.png") center no-repeat;
+}
+
+
+/* ----------头部---------- */
+
+/* 共用头部导航 */
+/* 头部样式设置 */
+.header-wrapper{
+    width: 100%;
+    border-bottom: 1px solid rgba(243,243,243);
+    box-shadow: 0px 2px 2px rgba(243,243,243);
+}
+
+
+.header{
+    height: 36px;
+    line-height: 36px;
+    background-color: rgb(51,51,51);
+}
+
+.header ul{
+    float: right;
+}
+
+.header ul li{
+    float: left;
+    margin-left: 10px;
+}
+
+.header ul li a{
+    font-size: 12px;
+    display: block;
+    color: #ccc;
+}
+
+/* 下拉菜单设置 */
+.drop-layer{
+    position: relative;
+}
+
+ /* 小三角设置 */
+.drop-layer::after{
+    /* 隐藏小三角，当鼠标滑入时小三角再出来 */
+    display: none;
+    content: "";
+    border: 7px solid transparent;
+    border-top: none;
+    border-bottom-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+}
+ 
+/* 显示小三角和下拉菜单 */
+.drop-layer:hover .purchase,
+.drop-layer:hover .service,
+.drop-layer:hover .barcode,
+.drop-layer:hover::after{
+    display: block;
+}
+
+/* 设置下拉菜单样式 */
+.purchase,
+.service,
+.barcode{
+    display: none;
+    width: 81px;
+    background-color: #fff;
+    z-index: 999;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    left: -10px;
+}
+
+/* 企业采购和客户服务下拉菜单设置 */
+.header ul .purchase{
+    height: 123px; 
+    float: none;
+}
+.header .service{
+    height: 162px;
+}
+
+
+/* 设置下拉菜单边框 */
+.drop-layer .purchase ul li,
+.drop-layer .service ul li{
+    border-bottom: 1px solid #ddd;
+}
+
+/* 设置下拉菜单a标签样式 */
+.drop-layer .purchase ul a,
+.drop-layer .service ul a{
+    display: block;
+    color: #999;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.drop-layer .purchase ul a:nth-child(1),
+.drop-layer .service ul a:nth-child(1){
+    margin-top: 3px;
+}
+
+/* 取消底部边框 */
+.drop-layer .purchase .noborder,
+.drop-layer .service .noborder{
+    border-bottom: none;
+}
+
+/* 设置下拉菜单鼠标滑入样式 */
+.drop-layer .purchase ul a:hover,
+.drop-layer .service ul a:hover{
+    color: #b4a078;
+}
+
+/* 设置APP下拉菜单 */
+.header .barcode{
+    width: 136px;
+    height: 155px;
+    left: -48px;
+}
+
+.barcode img{
+    margin-top: 10px;
+    margin-left: 7px;
+}
+
+.barcode span{
+    display: block;
+    color: #b4a078;
+    margin-left: 15px;
+    margin-top: -8px;
+}
+
+
+/* 箭头设置 */
+.fa-angle-down{
+    margin-left: 5px;
+}
+
+/* 手机图标设置 */
+.fa-mobile-alt{
+    margin-right: 3px;
+}
+
+/* 分割线设置 */
+.line{
+    color: #5c5c5c;
+}
+
+/* 鼠标滑入样式 */
+.header a:hover{
+    color: #fff;
+}
+
+
+/* ----------搜索---------- */
+
+/* logo 搜索框  购物车按钮设置 */
+.header-wrapper .feature-Tab{
+    height: 90px;
+    margin-top: 40px;
+}
+
+/* logo */
+.feature-Tab .logo{
+    width: 212px;
+    height: 60px;
+    background-color: #bfa;
+    float: left;
+    background: url("../img/sprite_picture.png");
+    background-position: -210px -303px;
+}
+
+/* 搜索框 */
+.feature-Tab .search{
+    width: 532px;
+    height: 38px;
+    float: left;
+    margin-left: 150px;
+    line-height: 38px;
+    position: relative;
+}
+
+.feature-Tab .search input{
+    width: 435px;
+    height: 36px;
+    border: 1px solid #CC9756;
+    outline: none;
+    color: #b4a078;
+    padding-left: 15px;
+}
+
+.feature-Tab .search button{
+    width: 90px;
+    height: 38px;
+    border: 0;
+    position: absolute;
+    top: 1px;
+    right: 5px;
+    background-color: #CC9756;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.feature-Tab .shopping-car-button{
+    width: 134px;
+    height: 38px;
+    float: right;
+    border: 1px solid #CC9756;
+    border-radius: 19px;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* 购物车 */
+.feature-Tab .shopping-car-button{
+    position: relative;
+}
+
+/* .feature-Tab .shopping-car-button .shopping-car{
+    width: 25px;
+    height: 25px;
+    background: url("../img/sprite_picture.png");
+    background-position: 0px -115px;
+    float: left;
+    margin: 8px;
+} */
+
+.feature-Tab .shopping-car-button span{
+    color: #CC9756;
+    float: left;
+    margin-top: 9px;
+    margin-left: 24px;
+}
+
+/* .feature-Tab .shopping-car-button .redDot{
+    width: 20px;
+    height: 20px;
+    background-color: #d4282d;
+    border-radius: 50%;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    left: 25px;
+    color: #fff;
+} */
+
+
+/* ----------导航---------- */
+.nav{
+    position: relative;
+    background-color: #fff;
+}
+.nav .sub-logo,
+.nav .login{
+    display: none;
+}
+
+.nav .center{
+    position: relative;
+}
+
+.navBar,
+.subNav{
+    font-size: 0;
+    text-align: center;
+}
+
+.navBar li,
+.subNav li{
+    font-size: 14px;
+    height: 50px;
+    padding:0 30px;
+    /* margin-top: -40px; */
+    display: inline-block;
+}
+
+.navBar li a{
+    padding-bottom: 6px;
+    font-weight: bold;
+}
+
+.navBar li a:hover,
+.navBar .active{
+    border-bottom: 3px solid #b4a078;
+}
+
+.navBar .separate{
+    color: #ccc;
+    font-size: 14px;
+    padding: 0;
+}
+
+/* 弹出的导航层 */
+.nav .subNav{
+    box-shadow: 0 6px 6px #ececec;
+    padding-bottom: 20px;
+    opacity: 0;
+    position: absolute;
+    top: 50px;
+    z-index: 2;
+    background-color: #fff;
+    width: 100%;
+    transition: .3s opacity;
+}
+
+.nav .subNav ul{
+    display: none;
+    padding: 10px 0 0 20px;
+}
+
+.subNav li{
+    height: auto;
+}
+
+.subNav li img{
+    display: block;
+}
+
+/* 购物车图标*/
+.car-wrapper{
+    width: 20px;
+    height: 20px;
+    background: url("../img/ico_04.gif");
+    position: absolute;
+    top: -80px;
+    right: 30px;
+}
+
+.car-wrapper i{
+    text-align: center;
+    background-color: #d4282d;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -10px;
+    left: 14px;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+/* 购物车弹出层 */
+.car-wrapper .car{
+    display:none;
+    box-shadow: 0 0 3px rgba(0,0,0,.5);
+    background-color: #fff;
+    width: 328px;
+    position: absolute;
+    top: 25px;
+    right: -15px;
+    border: 1px solid #b4a078;
+    padding-top: 15px;
+}
+
+/* 小三角设置 */
+.car-wrapper .car::before{
+    content: "";
+    display: table;
+    background: url("../img/ico_17.gif");
+    width: 12px;
+    height: 8px;
+    position: absolute;
+    top: -8px; 
+    right: 33px;
+}
+
+.car-wrapper .list{
+    height: 244px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* 弹出层列表设置 */
+.car-wrapper ul{
+    padding-left: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.car-wrapper .list li{
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.car-wrapper .img{
+    float: left;
+}
+
+.car-wrapper img{
+    width: 60px;
+    background-color: rgb(244,244,244);
+}
+
+/* 弹出层信息设置 */
+.car-wrapper .message{
+    width: 145px;
+    float: left;
+    height: 60px;
+    padding: 5px 0 5px 10px;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.car-wrapper .message p:nth-child(1){
+    /* 当文字字数过多，设置为..... */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.car-wrapper .message p:nth-child(2){
+    color: #c5c5c5;
+    margin-top: 10px;
+}
+
+.car-wrapper .price{
+    padding-top: 5px;
+    color: #d4282d;
+    font-size: 12px;
+    line-height: 20px;
+    width: 55px;
+    float: left;
+}
+
+.car-wrapper .close{
+    float: left;
+    width: 26px;
+    padding-top: 5px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+/* 右侧滚动条设置 */
+.car-wrapper .scrollBar{
+    float: right;
+    width: 17px;
+    height: 244px;
+    background: #f1f1f1;
+}
+
+.car-wrapper .scrollBar span{
+    width: 17px;
+    height: 17px;
+    display: block
+}
+
+.car-wrapper .topBtn{
+    background: url("../img/topBtn_bg.gif") 0 0;
+}
+
+.car-wrapper .topBtn:hover{
+    background: url("../img/topBtn_bg.gif") 0 -34px;
+}
+
+.car-wrapper .topBtn:active{
+    background: url("../img/topBtn_bg.gif") 0 -51px;
+}
+
+/* 滚动条下部按钮 */
+.car-wrapper .bottomBtn{
+    background: url("../img/bottomBtn_bg.gif") 0 0;
+}
+
+.car-wrapper .bottomBtn:hover{
+    background: url("../img/bottomBtn_bg.gif") 0 -34px;
+}
+
+.car-wrapper .bottom:active{
+    background: url("../img/bottomBtn_bg.gif") 0 -51px;
+}
+
+.car-wrapper .slide-wrapper{
+    height: 210px;
+    position: relative;
+}
+
+.car-wrapper .slider{
+    background-color: #c1c1c1;
+    width: 17px;
+    height: 50px;
+    position: absolute;
+    top: 0px;
+}
+
+.car-wrapper .slider:hover{
+    background-color: #a9a9a9;
+}
+
+.car-wrapper .slider:active{
+    background-color: #787878;
+}
+
+/* 结算部分 */
+.car-wrapper .total{
+    height: 66px;
+    background-color: #f4f0ea;
+    font: 12px/66px "微软雅黑";
+    text-align: center;
+}
+
+.car-wrapper .total span{
+    color: #d4282d;
+}
+
+.car-wrapper .total a{
+    display: inline-block;
+    width: 110px;
+    height: 36px;
+    background-color: #b4a078;
+    color: #fff;
+    line-height: 36px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.car-wrapper .total a:hover{
+    opacity: .8;
+}
+
+/* 吸顶导航设置 */
+#navFix{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #fff;
+    box-shadow: 0 2px 3px rgba(0,0,0,.2);
+}
+
+/* 吸顶导航logo设置 */
+#navFix .sub-logo{
+    display: block;
+    float: left;
+    margin: 13px 40px 0 0;
+}
+
+/* 吸顶导航li标签设置 */
+#navFix .navBar{
+    float: left;
+
+}
+
+#navFix .navBar li{
+    padding: 0 20px;
+    height: 60px;
+    line-height: 60px;
+}
+
+#navFix .navBar li:nth-last-child(1),
+#navFix .navBar li:nth-last-child(2),
+#navFix .navBar li:nth-last-child(3){
+    display: none;
+} 
+
+/* 吸顶登录/注册 */
+#navFix .login{
+    display: block;
+    float: left;
+    line-height: 60px;
+    height: 60px;
+    margin-left: 90px;
+}
+
+#navFix .login a{
+    margin-right: 20px;
+}
+
+ /* 吸顶购物车 */
+ #navFix .car-wrapper{
+    position: relative;
+    float: right;
+    top: 20px;
+    left: -15px;
+ }
+
+ /* 吸顶小人 */
+ #navFix .my-account{
+    width: 20px;
+    height: 22px;
+    background: url("../img/sprite_picture.png");
+    background-position: 0 -785px;
+    float: right;
+    position: relative;
+    top: 15px;
+    left: 8px;
+}
+
+ /* 吸顶搜索图标 */
+ #navFix .search-ico{
+    width: 17px;
+    height: 17px;
+    background: url("../img/sprite_picture.png");
+    background-position: 0 -542px;
+    float: right;
+    position: relative;
+    top: 20px;
+    left: 28px;
+}
+
+/* ---------底部---------- */
+#footer{
+    text-align: center;
+}
+
+#footer .message{
+    border: 1px solid #e8e8e8;
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+#footer .message .center{
+    display: flex;
+}
+
+#footer .message .center div{
+    width: 360px;
+}
+
+/* 第一个box */
+#footer .message .center div:nth-child(1) h4{
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+#footer .message .phone{
+    font-size: 22px;
+}
+
+#footer .message .workTime{
+    font-size: 14px;
+    margin: 25px 0;
+}
+
+#footer .message .center div:nth-child(1) a{
+    border: 1px solid #666;
+    display: inline-block;
+    width: 100px;
+    height: 28px;
+    line-height: 28px;
+    margin-right: 20px;
+}
+
+#footer .message .center div:nth-child(1) a:hover{
+    color: #fff;
+    background-color: #666;
+}
+
+/* 第二个box */
+#footer .message .center div:nth-child(2){
+    width: 370px;
+    border-left: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+    padding: 0 30px;
+}
+
+#footer .message .center div:nth-child(2) h4{
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+#footer .message .center div:nth-child(2) p{
+    text-align: left;
+}
+
+#footer .message .center div:nth-child(2) ul{
+    margin-top: 40px;
+}
+
+#footer .message .center div:nth-child(2) ul li{
+    float: left;
+    line-height: 38px;
+}
+
+#footer .message .center div:nth-child(2) ul li a{
+    margin: 0 10px;
+}
+
+/* 第三个box */
+#footer .message .center div:nth-child(3) h4{
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+#footer .message .center div:nth-child(3) p{
+    margin-top: 10px;
+    color: #b4a078;
+}
+
+/* 版权区域 */
+#footer .foot{
+    background: #333;
+    color: #fff;
+}
+
+/* 版权区上半部分 */
+#footer .foot .title{
+    display: flex;
+    justify-content: space-around;
+    height: 51px;
+    line-height: 51px;
+    font-size: 18px;
+    padding: 40px 0;
+    border-bottom: 1px solid #4f4f4f;
+    color: #fff;
+}
+
+
+#footer .foot .title div{
+    padding-left: 70px;
+}
+
+#footer .foot .title div:nth-child(1){
+    background: url("../img/ico_08.gif") left no-repeat;
+}
+
+#footer .foot .title div:nth-child(2){
+    background: url("../img/ico_09.gif") left no-repeat;
+}
+
+#footer .foot .title div:nth-child(3){
+    background: url("../img/ico_10.gif") left no-repeat;
+}
+
+/* 版权下半区域 */
+#footer .foot .copy{
+    color: #999;
+    padding: 30px 0;
+    text-align: center;
+}
+
+#footer .foot .copy ul li{
+    display: inline-block;
+}
+
+#footer .foot .copy ul li a{
+    color: #999;
+    font-size: 12px;
+}
+
+/* 右侧功能栏 */
+.sideBar{
+    position: fixed;
+    bottom: 50px;
+    right: 1%;
+    background-color: #fff;
+    width: 60px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.sideBar ul li a{
+    display: block;
+    margin: 10px 0;
+    padding-top: 30px;
+    font-size: 12px;
+}
+
+.sideBar ul li:nth-child(1) a{
+    background: url("../img/ico_11.gif") top center no-repeat;
+}
+
+.sideBar ul li:nth-child(2) a{
+    background: url("../img/ico_12.gif") top center no-repeat;
+}
+
+.sideBar ul li:nth-child(3) a{
+    background: url("../img/ico_13.gif") top center no-repeat;
+}
+
+.sideBar ul li:nth-child(4) a{
+    background: #999 url("../img/ico_14.gif") center 8px no-repeat;
+}
+
+.sideBar ul li .back{
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border: none;
+    box-sizing: border-box;
+}
+
+.sideBar ul li .back:hover{
+    color: #fff;
+    background-color: #b4a078;
+}
+
+/* 面包屑 */
+#position{
+    width: 1090px;
+    margin: 20px auto;
+}
+
+#position a{
+    font-size: 12px;
+}
+
+#position span{
+    color: #999;
+    font-size: 12px;
+}
+
+#position a:hover{
+    text-decoration: underline;
+    color: #333;
+}

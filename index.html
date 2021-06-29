@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网易严选</title>
+    <!-- 引入共同样式表 -->
+    <link rel="stylesheet" href="css/common.css">
+    <!-- 引入index css -->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- 引入字体库 -->
+    <link rel="stylesheet" href="font/css/all.css">
+</head>
+
+<body>
+    <!-- 创建头部容器 -->
+    <div class="header-wrapper">
+        <!-- 创建头部 -->
+        <div class="header">
+            <div class="center">
+                <ul class=" right">
+                    <li><a href="#">登录/注册</a></li>
+                    <!-- 设置分割线 -->
+                    <li class="line">|</li>
+                    <li><a href="#">我的订单</a></li>
+                    <li class="line">|</li>
+                    <li><a href="#">会员</a></li>
+                    <li class="line">|</li>
+                    <li><a href="#">甄选家</a></li>
+                    <li class="line">|</li>
+                    <li class="drop-layer">
+                        <a href="#">
+                            企业采购
+                            <i class="fas fa-angle-down"></i>
+                        </a>
+                        <!-- 下拉菜单 -->
+                        <div class="purchase">
+                            <ul>
+                                <li><a href="">企业购</a></li>
+                                <li><a href="#">礼品卡</a></li>
+                                <li class="noborder"><a href="#">联系我们</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="line">|</li>
+                    <li class="drop-layer">
+                        <a href="#">
+                            客户服务
+                            <i class="fas fa-angle-down"></i>
+                        </a>
+                        <!-- 下拉菜单 -->
+                        <div class="service">
+                            <ul>
+                                <li><a href="#">在线客服</a></li>
+                                <li><a href="#">帮助中心</a></li>
+                                <li><a href="#">商务合作</a></li>
+                                <li class="noborder"><a href="#">开放平台</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="line">|</li>
+                    <li class="drop-layer">
+                        <a href="#">
+                            <i class="fas fa-mobile-alt"></i>
+                            APP
+                        </a>
+                        <!-- 下拉菜单 -->
+                        <div class="barcode">
+                            <img src="/img/down.png">
+                            <span>下载领大额红包</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- logo搜索栏购物车设置 -->
+        <div class="feature-Tab center clearfix">
+            <!-- logo -->
+            <div class="logo"></div>
+            <!-- 搜索框 -->
+            <div class="search">
+                <input type="text" placeholder="Timberland制造商情侣牛皮鞋">
+                <button type="submit">搜索</button>
+            </div>
+            <!-- 购物车 -->
+            <div class="shopping-car-button">
+                <i class="shopping-car"></i>
+                <span>购物车</span>
+                <!-- <i class="redDot">0</i> -->
+            </div>
+        </div>
+
+        <!-- 导航  id="navFix"开启吸顶导航-->
+        <nav class="nav">
+            <div class="center clearfix">
+                <!-- 导航栏图标 -->
+                <a href="#" class="sub-logo"><img src="img/smallLogo.gif"></a>
+                <!-- 主菜单 -->
+                <ul class="navBar">
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#">居家</a></li>
+                    <li><a href="#">餐厨</a></li>
+                    <li><a href="#">配件</a></li>
+                    <li><a href="#">服装</a></li>
+                    <li><a href="#">洗护</a></li>
+                    <li><a href="#">婴童</a></li>
+                    <li><a href="#">杂货</a></li>
+                    <li><a href="#">饮食</a></li>
+                    <li><a href="#">其他</a></li>
+                    <li class="separate">|</li>
+                    <li><a href="#">为你严选</a></li>
+                    <li><a href="#">众筹</a></li>
+                </ul>
+                <!-- 搜索图标 -->
+                <div class="search-ico"></div>
+                <!-- 小人图标 -->
+                <div class="my-account"></div>
+                <!-- 购物车 -->
+                <div class="car-wrapper">
+                    <i>0</i>
+                    <div class="car">
+                        <div class="list">
+                            <ul>
+                                <li>
+                                    <!-- 物品图片 -->
+                                    <a href="#" class="img"><img src="img/img_01-1.png"></a>
+                                    <!-- 物品信息 -->
+                                    <div class="message">
+                                        <p><a href="#">领尖扣商务免烫衬衫</a></p>
+                                        <p>白色 L x1</p>
+                                    </div>
+                                    <div class="price">￥219.00</div>
+                                    <div class="close">X</div>
+                                </li>
+                                <li>
+                                    <!-- 物品图片 -->
+                                    <a href="#" class="img"><img src="img/img_01-1.png"></a>
+                                    <!-- 物品信息 -->
+                                    <div class="message">
+                                        <p><a href="#">领尖扣商务免烫衬衫</a></p>
+                                        <p>白色 L x1</p>
+                                    </div>
+                                    <div class="price">￥219.00</div>
+                                    <div class="close">X</div>
+                                </li>
+                                <li>
+                                    <!-- 物品图片 -->
+                                    <a href="#" class="img"><img src="img/img_01-1.png"></a>
+                                    <!-- 物品信息 -->
+                                    <div class="message">
+                                        <p><a href="#">领尖扣商务免烫衬衫</a></p>
+                                        <p>白色 L x1</p>
+                                    </div>
+                                    <div class="price">￥219.00</div>
+                                    <div class="close">X</div>
+                                </li>
+
+                            </ul>
+                            <!-- 右侧滚动条 -->
+                            <div class="scrollBar">
+                                <span class="topBtn"></span>
+                                <div class="slide-wrapper">
+                                    <div class="slider"></div>
+                                </div>
+                                <span class="bottomBtn"></span>
+                            </div>
+                        </div>
+                        <!-- 结算部分 -->
+                        <div class="total">
+                            商品合计:<span>￥751.00</span>
+                            <a href="#">去购物车结算</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 登录/注册 -->
+                <div class="login">
+                    <a href="#">登录</a>
+                    <a href="#">注册</a>
+                </div>
+            </div>
+            <!-- 副级菜单 -->
+            <div class="subNav clearfix">
+                <ul>
+                    <li><a href="#"><img src="img/nav_01.png">1被枕</a></li>
+                    <li><a href="#"><img src="img/nav_02.png">床品件套</a></li>
+                    <li><a href="#"><img src="img/nav_03.png">床垫</a></li>
+                    <li><a href="#"><img src="img/nav_04.png">地毯</a></li>
+                    <li><a href="#"><img src="img/nav_05.png">家具</a></li>
+                    <li><a href="#"><img src="img/nav_06.png">舒坐</a></li>
+                    <li><a href="#"><img src="img/nav_07.png">灯具</a></li>
+                    <li><a href="#"><img src="img/nav_08.png">家饰</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><img src="img/nav_01.png">2被枕</a></li>
+                    <li><a href="#"><img src="img/nav_02.png">床品件套</a></li>
+                    <li><a href="#"><img src="img/nav_03.png">床垫</a></li>
+                    <li><a href="#"><img src="img/nav_04.png">地毯</a></li>
+                    <li><a href="#"><img src="img/nav_05.png">家具</a></li>
+                    <li><a href="#"><img src="img/nav_06.png">舒坐</a></li>
+                    <li><a href="#"><img src="img/nav_07.png">灯具</a></li>
+                    <li><a href="#"><img src="img/nav_08.png">家饰</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><img src="img/nav_01.png">3被枕</a></li>
+                    <li><a href="#"><img src="img/nav_02.png">床品件套</a></li>
+                    <li><a href="#"><img src="img/nav_03.png">床垫</a></li>
+                    <li><a href="#"><img src="img/nav_04.png">地毯</a></li>
+                    <li><a href="#"><img src="img/nav_05.png">家具</a></li>
+                    <li><a href="#"><img src="img/nav_06.png">舒坐</a></li>
+                    <li><a href="#"><img src="img/nav_07.png">灯具</a></li>
+                    <li><a href="#"><img src="img/nav_08.png">家饰</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><img src="img/nav_01.png">4被枕</a></li>
+                    <li><a href="#"><img src="img/nav_02.png">床品件套</a></li>
+                    <li><a href="#"><img src="img/nav_03.png">床垫</a></li>
+                    <li><a href="#"><img src="img/nav_04.png">地毯</a></li>
+                    <li><a href="#"><img src="img/nav_05.png">家具</a></li>
+                    <li><a href="#"><img src="img/nav_06.png">舒坐</a></li>
+                    <li><a href="#"><img src="img/nav_07.png">灯具</a></li>
+                    <li><a href="#"><img src="img/nav_08.png">家饰</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><img src="img/nav_01.png">5被枕</a></li>
+                    <li><a href="#"><img src="img/nav_02.png">床品件套</a></li>
+                    <li><a href="#"><img src="img/nav_03.png">床垫</a></li>
+                    <li><a href="#"><img src="img/nav_04.png">地毯</a></li>
+                    <li><a href="#"><img src="img/nav_05.png">家具</a></li>
+                    <li><a href="#"><img src="img/nav_06.png">舒坐</a></li>
+                    <li><a href="#"><img src="img/nav_07.png">灯具</a></li>
+                    <li><a href="#"><img src="img/nav_08.png">家饰</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><img src="img/nav_01.png">6被枕</a></li>
+                    <li><a href="#"><img src="img/nav_02.png">床品件套</a></li>
+                    <li><a href="#"><img src="img/nav_03.png">床垫</a></li>
+                    <li><a href="#"><img src="img/nav_04.png">地毯</a></li>
+                    <li><a href="#"><img src="img/nav_05.png">家具</a></li>
+                    <li><a href="#"><img src="img/nav_06.png">舒坐</a></li>
+                    <li><a href="#"><img src="img/nav_07.png">灯具</a></li>
+                    <li><a href="#"><img src="img/nav_08.png">家饰</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><img src="img/nav_01.png">7被枕</a></li>
+                    <li><a href="#"><img src="img/nav_02.png">床品件套</a></li>
+                    <li><a href="#"><img src="img/nav_03.png">床垫</a></li>
+                    <li><a href="#"><img src="img/nav_04.png">地毯</a></li>
+                    <li><a href="#"><img src="img/nav_05.png">家具</a></li>
+                    <li><a href="#"><img src="img/nav_06.png">舒坐</a></li>
+                    <li><a href="#"><img src="img/nav_07.png">灯具</a></li>
+                    <li><a href="#"><img src="img/nav_08.png">家饰</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><img src="img/nav_01.png">8被枕</a></li>
+                    <li><a href="#"><img src="img/nav_02.png">床品件套</a></li>
+                    <li><a href="#"><img src="img/nav_03.png">床垫</a></li>
+                    <li><a href="#"><img src="img/nav_04.png">地毯</a></li>
+                    <li><a href="#"><img src="img/nav_05.png">家具</a></li>
+                    <li><a href="#"><img src="img/nav_06.png">舒坐</a></li>
+                    <li><a href="#"><img src="img/nav_07.png">灯具</a></li>
+                    <li><a href="#"><img src="img/nav_08.png">家饰</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><img src="img/nav_01.png">9被枕</a></li>
+                    <li><a href="#"><img src="img/nav_02.png">床品件套</a></li>
+                    <li><a href="#"><img src="img/nav_03.png">床垫</a></li>
+                    <li><a href="#"><img src="img/nav_04.png">地毯</a></li>
+                    <li><a href="#"><img src="img/nav_05.png">家具</a></li>
+                    <li><a href="#"><img src="img/nav_06.png">舒坐</a></li>
+                    <li><a href="#"><img src="img/nav_07.png">灯具</a></li>
+                    <li><a href="#"><img src="img/nav_08.png">家饰</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- banner -->
+    <div id="banner-wrapper">
+        <!-- 轮播图 -->
+        <div class="banner" id="bannerPic">
+            <div class="bannerPic"> 
+                <a href="#"><img src="img/pic_01.jpg" style="opacity: 1;"></a>
+                <a href="#"><img src="img/pic_02.jpg"></a>
+                <a href="#"><img src="img/pic_03.jpg"></a>
+                <a href="#"><img src="img/pic_04.jpg"></a>
+                <a href="#"><img src="img/pic_05.jpg"></a>
+            </div>
+            <!-- 轮播图左右按钮 -->
+            <!-- <div class="prev"><</div>
+            <div class="next">></div> -->
+            <!-- 导航点 -->
+            <!-- <div class="navDot">
+                    <a href="#" class="active"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+            </div> -->
+        </div>
+    </div>
+
+    <!-- 品牌制造商 -->
+    <div id="brand">
+        <!-- 品牌标题 -->
+        <div class="brand-name clearfix">
+            <div class="left">
+                <h3>品牌制造商</h3>
+                <span>工厂直达消费者,删除品牌溢价</span>
+            </div>
+            <div class="right">
+                <span>更多制造商 >></span>
+            </div>  
+        </div>
+        <!-- 品牌图片 -->
+        <div class="bImg">
+            <div class="imgBox">
+                <h4>MUJI制造商</h4>
+                <span>12.9元起</span>
+                <!-- 
+                    图片的src先放一张空图片的地址，当这张图片出现在可视区里，再把真实地址赋值给img
+                        图片一定要给地址，如果地址为空的话，img标签会有一个边框，解决办法就是给一个地址
+                -->
+                <a href="#" class="scaleImg">
+                    <img class="original" src="img/empty.gif" data-orignial="img/img_01.jpg">
+                </a>
+            </div>
+            <div class="imgBox">
+                <h4>MUJI制造商</h4>
+                <span>12.9元起</span>
+                <a href="#" class="scaleImg">
+                    <img class="original" src="img/empty.gif" data-orignial="img/img_02.jpg">
+                </a>
+            </div>
+            <div class="imgBox">
+                <div>
+                    <h4>Adidas制造商</h4>
+                    <span>49元起</span>
+                    <a href="#" class="scaleImg">
+                        <img class="original" src="img/empty.gif" data-orignial="img/img_03.jpg">
+                    </a>
+                </div>
+                <div>
+                    <h4>内野制造商</h4>
+                    <span>29.9元起</span>
+                    <a href="#" class="scaleImg">
+                        <img class="original" src="img/empty.gif" data-orignial="img/img_04.jpg">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 新品发售 -->
+    <div id="new">
+        <header class="brand-name clearfix">
+            <div class="left">
+                <h3>新品首发</h3>
+                <span>周一周四上新，为你寻觅世间好物</span>
+            </div>
+            <div class="right">
+                <a href="#" class="scaleImg">更多新品 >></a>
+            </div>
+        </header>
+        <div class="content" id="newProduct">
+            <div class="carouselImgCon">
+                <ul class="clearfix">
+                    <li>
+                        <span class="colorNum">2色可选</span>
+                        <a href="#">
+                            <img class="original" src="img/empty.gif" data-orignial="img/img_05.png">
+                            <img class="original" src="img/empty.gif"data-orignial="img/img_05.jpg">
+                        </a>
+                        <div class="title">
+                            <a href="#">单面绒休闲卫衣(男童)</a>
+                            <p>￥109</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="colorNum">2色可选</span>
+                        <a href="#">
+                            <img class="original" src="img/empty.gif" data-orignial="img/img_06.png">
+                            <img class="original" src="img/empty.gif" data-orignial="img/img_06.jpg">
+                        </a>
+                        <div class="title">
+                            <a href="#">儿童室内游戏帐篷</a>
+                            <p>￥259</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="colorNum">2色可选</span>
+                        <a href="#">
+                            <img class="original" src="img/empty.gif" data-orignial="img/img_07.png">
+                            <img class="original" src="img/empty.gif" data-orignial="img/img_07.jpg">
+                        </a>
+                        <div class="title">
+                            <a href="#">棉双层哺乳衬衫</a>
+                            <p>￥169</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="colorNum">2色可选</span>
+                        <a href="#">
+                            <img class="original" src="img/empty.gif" data-orignial="img/img_08.png">
+                            <img class="original" src="img/empty.gif" data-orignial="img/img_08.jpg">
+                        </a>
+                        <div class="title">
+                            <a href="#">网易智能插线板3件套</a>
+                            <p>￥117</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="colorNum">2色可选</span>
+                        <a href="#">
+                            <img src="img/img_09.png">
+                            <img src="img/img_09.jpg">
+                        </a>
+                        <div class="title">
+                            <a href="#">纯黑休闲背包</a>
+                            <p>￥236</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="colorNum">2色可选</span>
+                        <a href="#">
+                            <img src="img/img_10.png">
+                            <img src="img/img_10.jpg">
+                        </a>
+                        <div class="title">
+                            <a href="#">灰色雪地靴</a>
+                            <p>￥239</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="colorNum">2色可选</span>
+                        <a href="#">
+                            <img src="img/img_11.png">
+                            <img src="img/img_11.jpg">
+                        </a>
+                        <div class="title">
+                            <a href="#">土色雪地靴</a>
+                            <p>￥239</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="colorNum">2色可选</span>
+                        <a href="#">
+                            <img src="img/img_12.png">
+                            <img src="img/img_12.jpg">
+                        </a>
+                        <div class="title">
+                            <a href="#">智能灯环</a>
+                            <p>￥86</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 左右按钮/导航点 -->
+           <!--  <div class="prev"><</div>
+            <div class="next">></div> -->
+        </div>
+    </div>
+
+    <!-- 人气推荐 -->
+    <div id="recommend">
+        <div class="center clearfix">
+            <header class="clearfix">
+                <div class="left">
+                    <h3>人气推荐</h3>
+                    <ul>
+                        <li class="active">编辑推荐</li>
+                        <li>人气周榜</li>
+                        <li>热销总比</li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <a href="#">更多推荐>></a>
+                </div>
+            </header>
+            <div class="content clearfix"> 
+                <div class="box speical">
+                    <span class="colorNumb">1色可选</span>
+                    <a href="#" class="scaleImg"><img src="img/img_13.png"></a>
+                    <div class="title">
+                        <a href="#">简约陶瓷马克杯</a>
+                        <p>￥39</p>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="box">
+                        <span class="colorNumb">3色可选</span>
+                        <a href="#" class="scaleImg"><img src="img/img_14.png"></a>
+                        <div class="title">
+                            <a href="#">星空原色水晶笔</a>
+                            <p>￥29</p>
+                        </div>
+                    </div>    
+                    <div class="box">
+                        <span class="colorNumb">4色可选</span>
+                        <a href="#" class="scaleImg"><img src="img/img_15.png"></a>
+                        <div class="title">
+                            <a href="#">速干防滑浴室拖鞋</a>
+                            <p>￥24.9</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <a href="#" class="scaleImg"><img src="img/img_16.png"></a>
+                        <div class="title">
+                            <a href="#">6个装 谷凤一木 软抽面巾纸</a>
+                            <p>￥16.9</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <a href="#" class="scaleImg"><img src="img/img_17.png"></a>
+                        <div class="title">
+                            <a href="#">绿野仙踪永生花</a>
+                            <p>￥469</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <span class="colorNumb">1色可选</span>
+                        <a href="#" class="scaleImg"><img src="img/img_18.png"></a>
+                        <div class="title">
+                            <a href="#">黑凤梨男式真丝睡衣</a>
+                            <p>￥799</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <a href="#" class="scaleImg"><img src="img/img_19.png"></a>
+                        <div class="title">
+                            <a href="#">日式和风超声波香薰机</a>
+                            <p>￥199</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content clearfix">
+                <div class="box speical">
+                    <span class="colorNumb">2色可选</span>
+                    <a href="#" class="scaleImg"><img src="img/img_13.png"></a>
+                    <div class="title">
+                        <a href="#">简约陶瓷马克杯</a>
+                        <p>￥39</p>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="box">
+                        <span class="colorNumb">3色可选</span>
+                        <a href="#" class="scaleImg"><img src="img/img_14.png"></a>
+                        <div class="title">
+                            <a href="#">星空原色水晶笔</a>
+                            <p>￥29</p>
+                        </div>
+                    </div>    
+                    <div class="box">
+                        <span class="colorNumb">4色可选</span>
+                        <a href="#" class="scaleImg"><img src="img/img_15.png"></a>
+                        <div class="title">
+                            <a href="#">速干防滑浴室拖鞋</a>
+                            <p>￥24.9</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <a href="#" class="scaleImg"><img src="img/img_16.png"></a>
+                        <div class="title">
+                            <a href="#">6个装 谷凤一木 软抽面巾纸</a>
+                            <p>￥16.9</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <a href="#" class="scaleImg"><img src="img/img_17.png"></a>
+                        <div class="title">
+                            <a href="#">绿野仙踪永生花</a>
+                            <p>￥469</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <span class="colorNumb">1色可选</span>
+                        <a href="#" class="scaleImg"><img src="img/img_18.png"></a>
+                        <div class="title">
+                            <a href="#">黑凤梨男式真丝睡衣</a>
+                            <p>￥799</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <a href="#" class="scaleImg"><img src="img/img_19.png"></a>
+                        <div class="title">
+                            <a href="#">日式和风超声波香薰机</a>
+                            <p>￥199</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content clearfix">
+                <div class="box speical">
+                    <span class="colorNumb">3色可选</span>
+                    <a href="#" class="scaleImg"><img src="img/img_13.png"></a>
+                    <div class="title">
+                        <a href="#">简约陶瓷马克杯</a>
+                        <p>￥39</p>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="box">
+                        <span class="colorNumb">3色可选</span>
+                        <a href="#" class="scaleImg"><img src="img/img_14.png"></a>
+                        <div class="title">
+                            <a href="#">星空原色水晶笔</a>
+                            <p>￥29</p>
+                        </div>
+                    </div>    
+                    <div class="box">
+                        <span class="colorNumb">4色可选</span>
+                        <a href="#" class="scaleImg"><img src="img/img_15.png"></a>
+                        <div class="title">
+                            <a href="#">速干防滑浴室拖鞋</a>
+                            <p>￥24.9</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <a href="#" class="scaleImg"><img src="img/img_16.png"></a>
+                        <div class="title">
+                            <a href="#">6个装 谷凤一木 软抽面巾纸</a>
+                            <p>￥16.9</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <a href="#" class="scaleImg"><img src="img/img_17.png"></a>
+                        <div class="title">
+                            <a href="#">绿野仙踪永生花</a>
+                            <p>￥469</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <span class="colorNumb">1色可选</span>
+                        <a href="#" class="scaleImg"><img src="img/img_18.png"></a>
+                        <div class="title">
+                            <a href="#">黑凤梨男式真丝睡衣</a>
+                            <p>￥799</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <a href="#" class="scaleImg"><img src="img/img_19.png"></a>
+                        <div class="title">
+                            <a href="#">日式和风超声波香薰机</a>
+                            <p>￥199</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 限时购 -->
+    <div id="limit">
+        <header class="clearfix">
+            <div class="left">
+                <h3>限时购</h3>
+            </div>
+            <div class="right">更多推荐 >></div>
+        </header>
+        <div class="clearfix">
+            <!-- 左侧限时区 -->
+            <div class="time left">
+                <h4>14点场</h4>
+                <p>距离结束还剩</p>
+                <span>00</span>:
+                <span>00</span>:
+                <span>00</span>
+                <a href="#">查看更多</a>
+            </div>
+            <!-- 右侧内容区 -->
+            <div class="info right">
+                <div class="limitBox">
+                    <div class="imgBox">
+                        <a href="#"><img src="img/img_20.png"></a>
+                    </div>
+                    <div class="detail right">
+                        <p>复古翻帮休闲女鞋</p>
+                        <span>翻帮设计，复古发过风</span>
+                        <div class="numBar">
+                            <div class="numCon"><span></span></div>
+                            <span class="numTips">还剩573件</span>
+                        </div>
+                    <div class="payment">
+                        <span class="xianshi">限时价</span>
+                        <span class="symbol">￥</span>
+                        <strong>199</strong>
+                        <span class="yuan">原价￥249</span>
+                    </div>
+                    <a href="#" class="qiang">立即抢购</a>
+                </div>
+            </div>
+                <div class="limitBox">
+                    <div class="imgBox">
+                        <a href="#"><img src="img/img_21.png"></a>
+                    </div>
+                    <div class="detail right">
+                        <p>澳洲纯羊毛盖毯 加厚款</p>
+                        <span>温暖加厚设计</span>
+                        <div class="numBar">
+                            <div class="numCon"><span></span></div>
+                            <span class="numTips">还剩187</span>
+                        </div>
+                        <div class="payment">
+                            <span class="xianshi">限时价</span>
+                            <span class="symbol">￥</span>
+                            <strong>319</strong>
+                            <span class="yuan">原价￥399</span>
+                        </div>
+                        <a href="#" class="qiang">立即抢购</a>
+                    </div>
+                </div>
+                <div class="limitBox">
+                    <div class="imgBox">
+                        <a href="#"><img src="img/img_22.png"></a>
+                    </div>
+                    <div class="detail right">
+                        <p>男式半毛圈运动船袜</p>
+                        <span>足底半毛圈设计，减震舒适</span>
+                        <div class="numBar">
+                            <div class="numCon"><span></span></div>
+                            <span class="numTips">还剩301</span>
+                        </div>
+                        <div class="payment">
+                            <span class="xianshi">限时价</span>
+                            <span class="symbol">￥</span>
+                            <strong>36</strong>
+                            <span class="yuan">原价￥49</span>
+                        </div>
+                        <a href="#" class="qiang">立即抢购</a>
+                    </div>
+                </div>
+                <div class="limitBox">
+                    <div class="imgBox">
+                        <a href="#"><img src="img/img_23.png"></a>
+                    </div>
+                    <div class="detail right">
+                        <p>南瓜脆片 100克</p>
+                        <span>金黄南瓜，原色原味</span>
+                        <div class="numBar">
+                            <div class="numCon"><span></span></div>
+                            <span class="numTips">还剩573件</span>
+                        </div>
+                        <div class="payment">
+                            <span class="xianshi">限时价</span>
+                            <span class="symbol">￥</span>
+                            <strong>7.9</strong>
+                            <span class="yuan">原价￥9.9</span>
+                        </div>
+                        <a href="#" class="qiang">立即抢购</a>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <!-- 居家 -->
+    <div class="furniture">
+        <header class="clearfix">
+            <div class="left">
+                <h3>居家</h3>
+                <span>回家,放松身心</span>
+            </div>
+            <div class="right">
+                <a href="#" class="more">更多推荐 >></a>
+                <ul>
+                    <li><a href="#">被枕</a>/</li>
+                    <li><a href="#">床品件套</a>/</li>
+                    <li><a href="#">床垫</a>/</li>
+                    <li><a href="#">地垫</a>/</li>
+                    <li><a href="#">舒坐</a>/</li>
+                    <li><a href="#">灯具</a>/</li>
+                    <li><a href="#">家饰</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="bigImg">
+            <a href="#"><img src="img/img_24.jpg"></a>
+        </div>
+        <ul class="furniture-list">
+            <li>
+                <a href="#" class="scaleImg"><img src="img/img_25.png"></a>
+                <p><a href="#">日式记忆棉坐垫</a></p>
+                <span>￥59</span>
+            </li>
+            <li>
+                <a href="#" class="scaleImg"><img src="img/img_26.png"></a>
+                <p><a href="#">日式记忆棉坐垫</a></p>
+                <span>￥59</span>
+            </li>
+            <li>
+                <a href="#" class="scaleImg"><img src="img/img_27.png"></a>
+                <p><a href="#">日式记忆棉坐垫</a></p>
+                <span>￥59</span>
+            </li>
+            <li>
+                <a href="#" class="scaleImg"><img src="img/img_28.png"></a>
+                <p><a href="#">日式记忆棉坐垫</a></p>
+                <span>￥59</span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 大家都在说 -->
+    <div id="say">
+        <div class="content center">
+            <header class="clearfix"> 
+                <div class="left">
+                    <h3>大家都在说</h3>
+                    <span>生活，没有统一的标准</span>
+                </div>
+            </header>
+            <div id="sayPic">
+                <div class="carouselImgCon">
+                    <ul>
+                        <li>
+                            <a href="#" class="scaleImg"><img class="original" src="img/empty.gif " data-orignial="img//img_29.jpg"></a>
+                            <div>
+                                <p>****1 2017-01-25 01：03</p>
+                                <p class="clearfix">
+                                    <span class="left">2黄金脆千层140克</span>
+                                    <span class="right">￥23</span>
+                                </p>
+                                <p>
+                                    超棒的产品，手感非常的舒服，包装很别致，物理很快。会继续关注，甘心网易严选 帮我们选择这么好的产品，希望继续帮我们严格选择更优质的产品
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="scaleImg"><img class="original" src="img/empty.gif" data-orignial="img//img_30.jpg"></a>
+                            <div>
+                                <p>****1 2017-01-25 01：03</p>
+                                <p class="clearfix">
+                                    <span class="left">2黄金脆千层140克</span>
+                                    <span class="right">￥23</span>
+                                </p>
+                                <p>
+                                    超棒的产品，手感非常的舒服，包装很别致，物理很快。会继续关注，甘心网易严选 帮我们选择这么好的产品，希望继续帮我们严格选择更优质的产品
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="scaleImg"><img class="original" src="img/empty.gif" data-orignial="img//img_31.jpg"></a>
+                            <div>
+                                <p>****1 2017-01-25 01：03</p>
+                                <p class="clearfix">
+                                    <span class="left">2黄金脆千层140克</span>
+                                    <span class="right">￥23</span>
+                                </p>
+                                <p>
+                                    超棒的产品，手感非常的舒服，包装很别致，物理很快。会继续关注，甘心网易严选 帮我们选择这么好的产品，希望继续帮我们严格选择更优质的产品
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="scaleImg"><img class="original" src="img/empty.gif" data-orignial="img//img_32.jpg"></a>
+                            <div>
+                                <p>****1 2017-01-25 01：03</p>
+                                <p class="clearfix">
+                                    <span class="left">2黄金脆千层140克</span>
+                                    <span class="right">￥23</span>
+                                </p>
+                                <p>
+                                    超棒的产品，手感非常的舒服，包装很别致，物理很快。会继续关注，甘心网易严选 帮我们选择这么好的产品，希望继续帮我们严格选择更优质的产品
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="scaleImg"><img class="original" src="img/empty.gif" data-orignial="img//img_33.jpg"></a>
+                            <div>
+                                <p>****1 2017-01-25 01：03</p>
+                                <p class="clearfix">
+                                    <span class="left">2黄金脆千层140克</span>
+                                    <span class="right">￥23</span>
+                                </p>
+                                <p>
+                                    超棒的产品，手感非常的舒服，包装很别致，物理很快。会继续关注，甘心网易严选 帮我们选择这么好的产品，希望继续帮我们严格选择更优质的产品
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="scaleImg"><img class="original" src="img/empty.gif" data-orignial="img//img_34.jpg"></a>
+                            <div>
+                                <p>****1 2017-01-25 01：03</p>
+                                <p class="clearfix">
+                                    <span class="left">2黄金脆千层140克</span>
+                                    <span class="right">￥23</span>
+                                </p>
+                                <p>
+                                    超棒的产品，手感非常的舒服，包装很别致，物理很快。会继续关注，甘心网易严选 帮我们选择这么好的产品，希望继续帮我们严格选择更优质的产品
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <div class="prev"><</div>
+            <div class="next">></div> -->
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <div id="footer">
+        <div class="message">
+            <div class="center">
+                <div class="box">
+                    <h4>客服电话</h4>
+                    <p class="phone">400-0368-163</p>
+                    <p class="workTime">9:00-22:00</p>
+                    <div class="btn">
+                        <a href="#">用户反馈</a>
+                        <a href="#">在线客服</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <h4>何为严选</h4>
+                    <p> 网易原创生活类电商品牌，秉承网易一贯的严谨态度，我们深入世界各地，
+                        从源头全程严格把控商品生产环节，力求消费者甄选到最优质的的商品
+                    </p>
+                    <ul class="clearfix">
+                        <li>关注我们:</li>
+                        <li><a href="#"><img src="img/ico_05.gif"></a></li>
+                        <li><a href="#"><img src="img/ico_06.gif"></a></li>
+                        <li><a href="#"><img src="img/ico_07.gif"></a></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h4>扫码下载严选APP</h4>
+                    <img src="img/down.png">
+                    <p>首单立减8元</p>
+                </div>
+            </div>
+        </div>
+            
+        <div class="foot">
+            <div class="title">
+                <div>30天无忧退货</div>
+                <div>满88元免邮费</div>
+                <div>网易品质保证</div>
+            </div>
+            <div class="copy">
+                <ul class="clearfix">
+                    <li><a href="javascript:;">关于我们</a>|</li>
+                    <li><a href="javascript:;">帮助中心</a>|</li>
+                    <li><a href="javascript:;">售后服务</a>|</li>
+                    <li><a href="javascript:;">配送与验收</a>|</li>
+                    <li><a href="javascript:;">商务合作</a>|</li>
+                    <li><a href="javascript:;">企业采购</a>|</li>
+                    <li><a href="javascript:;">友情链接</a></li>
+                </ul>
+                <p>网易公司版权所有 &copy; 1997-2017 食品经营许可证: JY13301080111719</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 右侧固定功能栏 -->
+    <div class="sideBar">
+        <ul>
+            <li><a href="javascript:;">新人有礼</a></li>
+            <li><a href="javascript:;">下载APP</a></li>
+            <li><a href="javascript:;">在线客服</a></li>
+            <li><a href="javascript:;" class="back">回顶部</a></li>
+        </ul>
+    </div>
+
+    <!-- 引入js文件 -->
+    <script src="js/common.js"></script>
+    <script src="js/move.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/limitTime.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+</html>
